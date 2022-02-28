@@ -1,0 +1,202 @@
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+:root {
+  --blue-color: #20A1D4;
+  --green-color: #1CBC2C;
+  --oragne-color: #EF5F3C;
+  --black-color: #424242;
+  --grey-color: #777;
+  --light-grey-color: #eaeaea;
+  --white-color: #ffffff;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  background-color: var(--blue-color);
+}
+
+.project-fund-card {
+  width: 303px;
+  margin: 30px auto;
+  padding: 80px 20px 20px;
+  background-color: var(--white-color);
+  border-radius: 4px;
+}
+
+/* Main Content CSS */
+
+.main-content {
+  border: 1px solid var(--light-grey-color);
+  border-bottom: 2px solid var(--light-grey-color);
+}
+
+.progress-text {
+  background-color: var(--black-color);
+  padding: 15px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid var(--black-color);
+}
+
+.progress-bar {
+  border-bottom: 1px solid var(--light-grey-color);
+  height: 15px;
+  position: relative;
+}
+
+.current-progress {
+  width: 70%;
+  height: 100%;
+  background-color: var(--oragne-color);
+}
+
+.fund-info {
+  padding: 20px;
+}
+
+.donors-info {
+  margin: 15px 0;
+}
+
+.donation-box-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donation-input, .donation-button {
+  height: 45px;
+  width: 45%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.donation-input {
+  border: 1px solid var(--light-grey-color);
+}
+
+.donation-input > input {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--black-color);
+}
+
+.donation-button > .btn {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dollar-symbol {
+  padding: 0 5px;
+}
+
+.donation-text {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.donation-text > span {
+  font-size: 14px;
+}
+
+/* Footer buttons CSS */
+
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group > .btn {
+  border: 1px solid var(--light-grey-color);
+  height: 45px;
+  border-radius: 4px;
+  width: 47%;
+  cursor: pointer;
+  border-bottom: 2px solid var(--light-grey-color);
+  color: var(--grey-color);
+}
+
+/* Global CSS */
+
+.bold {
+  font-weight: bold;
+}
+
+.green-color {
+  color: var(--green-color);
+}
+
+.orange-color {
+  color: var(--oragne-color)
+}
+
+.white-color {
+  color: var(--white-color);
+}
+
+.grey-color {
+  color: var(--grey-color);
+}
+
+.blue-color {
+  color: var(--blue-color);
+}
+
+.green-background {
+  background-color: var(--green-color);
+}
+
+input, button {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+span, div, button {
+  font-size: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
